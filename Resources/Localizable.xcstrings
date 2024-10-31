@@ -1,0 +1,563 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    "%@: %lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@: %2$lld"
+          }
+        }
+      }
+    },
+    "Add" : {
+
+    },
+    "Add quest" : {
+
+    },
+    "Back" : {
+
+    },
+    "combat_0" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Harmless"
+          }
+        }
+      }
+    },
+    "combat_1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostly Harmless"
+          }
+        }
+      }
+    },
+    "combat_2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Novice"
+          }
+        }
+      }
+    },
+    "combat_3" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Competent"
+          }
+        }
+      }
+    },
+    "combat_4" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Expert"
+          }
+        }
+      }
+    },
+    "combat_5" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Master"
+          }
+        }
+      }
+    },
+    "combat_6" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dangerous"
+          }
+        }
+      }
+    },
+    "combat_7" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deadly"
+          }
+        }
+      }
+    },
+    "combat_8" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elite"
+          }
+        }
+      }
+    },
+    "combat_9" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elite I"
+          }
+        }
+      }
+    },
+    "combat_10" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elite II"
+          }
+        }
+      }
+    },
+    "combat_11" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elite III"
+          }
+        }
+      }
+    },
+    "combat_12" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elite IV"
+          }
+        }
+      }
+    },
+    "combat_13" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elite V"
+          }
+        }
+      }
+    },
+    "Commander" : {
+
+    },
+    "Commander: %@" : {
+
+    },
+    "Credits: %lld" : {
+
+    },
+    "Crime: %lld" : {
+
+    },
+    "Current ship: %@  %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Current ship: %1$@  %2$@"
+          }
+        }
+      }
+    },
+    "Debt: %lld" : {
+
+    },
+    "Details" : {
+
+    },
+    "Engineers" : {
+
+    },
+    "exploration_0" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aimless"
+          }
+        }
+      }
+    },
+    "exploration_1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostly Aimless"
+          }
+        }
+      }
+    },
+    "exploration_2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scout"
+          }
+        }
+      }
+    },
+    "exploration_3" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Surveyor"
+          }
+        }
+      }
+    },
+    "exploration_4" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trailblazer"
+          }
+        }
+      }
+    },
+    "exploration_5" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pathfinder"
+          }
+        }
+      }
+    },
+    "exploration_6" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ranger"
+          }
+        }
+      }
+    },
+    "exploration_7" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pioneer"
+          }
+        }
+      }
+    },
+    "exploration_8" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elite"
+          }
+        }
+      }
+    },
+    "exploration_9" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elite I"
+          }
+        }
+      }
+    },
+    "exploration_10" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elite II"
+          }
+        }
+      }
+    },
+    "exploration_11" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elite III"
+          }
+        }
+      }
+    },
+    "exploration_12" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elite IV"
+          }
+        }
+      }
+    },
+    "exploration_13" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elite V"
+          }
+        }
+      }
+    },
+    "Journal" : {
+
+    },
+    "Log In" : {
+
+    },
+    "O7, %@!" : {
+
+    },
+    "O7!" : {
+
+    },
+    "On foot: %@ " : {
+
+    },
+    "Power: %lld" : {
+
+    },
+    "Quests" : {
+
+    },
+    "Route" : {
+
+    },
+    "Select an item" : {
+
+    },
+    "Service: %lld" : {
+
+    },
+    "Ships" : {
+
+    },
+    "Sign In" : {
+
+    },
+    "System: %@" : {
+
+    },
+    "Title" : {
+
+    },
+    "trade_0" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Penniless"
+          }
+        }
+      }
+    },
+    "trade_1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostly Penniless"
+          }
+        }
+      }
+    },
+    "trade_2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Peddler"
+          }
+        }
+      }
+    },
+    "trade_3" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dealer"
+          }
+        }
+      }
+    },
+    "trade_4" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Merchant"
+          }
+        }
+      }
+    },
+    "trade_5" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Broker"
+          }
+        }
+      }
+    },
+    "trade_6" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entrepreneur"
+          }
+        }
+      }
+    },
+    "trade_7" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tycoon"
+          }
+        }
+      }
+    },
+    "trade_8" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elite"
+          }
+        }
+      }
+    },
+    "trade_9" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elite I"
+          }
+        }
+      }
+    },
+    "trade_10" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elite II"
+          }
+        }
+      }
+    },
+    "trade_11" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elite III"
+          }
+        }
+      }
+    },
+    "trade_12" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elite IV"
+          }
+        }
+      }
+    },
+    "trade_13" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elite V"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
