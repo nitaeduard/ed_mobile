@@ -395,6 +395,9 @@
     "Route" : {
 
     },
+    "Scoopable: %@" : {
+
+    },
     "Select an item" : {
 
     },
@@ -405,6 +408,9 @@
 
     },
     "Sign In" : {
+
+    },
+    "System" : {
 
     },
     "System: %@" : {

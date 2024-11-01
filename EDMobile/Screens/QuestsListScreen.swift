@@ -26,22 +26,27 @@ struct EDQuestsListScreen: View {
     }
 
     var body: some View {
-        ScrollView {
-            ForEach(visibleQuests) { quest in
-                questRowView(quest)
-                    .onTapGesture {
-                        withAnimation {
-                            visibleQuest = quest
-                            detailsVisible = true
+        VStack {
+            ScrollView {
+                ForEach(visibleQuests) { quest in
+                    questRowView(quest)
+                        .onTapGesture {
+                            withAnimation {
+                                visibleQuest = quest
+                                detailsVisible = true
+                            }
                         }
-                    }
+                }
             }
+            Spacer()
         }
         .background {
-            if let visibleQuest, visibleQuest.system?.scoopable ?? false {
-                EDPlanetSceneView()
-            } else {
-                EDStarSceneView(starType: .blueGiant)
+            if let visibleQuest {
+                if visibleQuest.system?.scoopable ?? false {
+                    EDPlanetSceneView()
+                } else {
+                    EDStarSceneView(starType: .blueGiant)
+                }
             }
         }
     }
@@ -72,20 +77,28 @@ struct EDQuestsListScreen: View {
 
                 Spacer()
             }
-            .padding()
-            .background(.ultraThinMaterial.opacity(0.8))
-            .background(.blue.opacity(0.1))
-            .cornerRadius(16)
-            .overlay {
-                RoundedRectangle(cornerRadius: 16)
-                    .stroke(Color.blue.opacity(0.2), style: StrokeStyle(lineWidth: 2))
-            }
-            .padding(.horizontal)
+            .questCell
 
-            if let visibleQuest {
-                ScrollView {
-                    Text(visibleQuest.details)
+            if visibleQuest?.id == quest.id {
+                Group {
+                    Text(quest.details)
+                        .frame(maxWidth: .infinity, alignment: .leading)
                         .multilineTextAlignment(.leading)
+                }
+                .transition(.move(edge: .leading).combined(with: .opacity))
+                .questCell
+
+                if let system = quest.system {
+                    VStack {
+                        Text("System: \(system.name)")
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .multilineTextAlignment(.leading)
+                        Text("Scoopable: \(system.scoopable ?? false ? "Yes" : "No")")
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .multilineTextAlignment(.leading)
+                    }
+                    .transition(.move(edge: .trailing).combined(with: .opacity))
+                    .questCell
                 }
 
                 Button(action: {
@@ -94,8 +107,10 @@ struct EDQuestsListScreen: View {
                         detailsVisible = false
                     }
                 }, label: { Text("Back") })
+                    .transition(.move(edge: .bottom).combined(with: .opacity))
             }
         }
+        .padding(.horizontal)
     }
 
     func questLogo(for type: String?) -> ImageResource {
@@ -104,5 +119,19 @@ struct EDQuestsListScreen: View {
         case "Combat": return .Combat.rank9
         default: return .planet
         }
+    }
+}
+
+fileprivate extension View {
+    @ViewBuilder
+    var questCell: some View {
+        padding()
+            .background(.ultraThinMaterial.opacity(0.8))
+            .background(.blue.opacity(0.1))
+            .cornerRadius(16)
+            .overlay {
+                RoundedRectangle(cornerRadius: 16)
+                    .stroke(Color.blue.opacity(0.2), style: StrokeStyle(lineWidth: 2))
+            }
     }
 }

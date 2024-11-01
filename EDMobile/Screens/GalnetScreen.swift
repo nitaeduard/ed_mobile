@@ -13,19 +13,60 @@ struct EDGalnetScreen: View {
     @StateObject
     var model = EDGalnetViewModel()
 
+    @State
+    var scrollOffset: CGFloat = 0
+
+    func statusBarOpacity(for height: CGFloat) -> CGFloat {
+        return 1 - max(0, min(height, height + scrollOffset)) / height
+    }
+
     var body: some View {
         ScrollView {
-            ForEach(model.galnetData, id: \.id) { data in
-                VStack(alignment: .leading, spacing: 0) {
-                    articleImage(data.url)
-                    articleHeader(data.title, date: data.date)
-                    articleContent(data.text)
+            VStack(spacing: 0) {
+                EDScrollViewOffsetTracker()
+                ForEach(model.galnetData, id: \.id) { data in
+                    VStack(alignment: .leading, spacing: 0) {
+                        articleImage(data.url)
+                        articleHeader(data.title, date: data.date)
+                        articleContent(data.text)
+                    }
                 }
             }
         }
+        .safeAreaInset(edge: .top) {
+            GeometryReader { proxy in
+                ZStack {
+                    Color.clear.frame(height: 0)
+                }
+                .background(.thinMaterial.opacity(statusBarOpacity(for: proxy.safeAreaInsets.top)))
+            }
+            .frame(height: 0)
+        }
+        .coordinateSpace(name: "scrollView")
+        .onPreferenceChange(EDScrollViewOffsetKey.self) { scrollOffset = $0 }
         .onAppear {
             model.loadData()
         }
+    }
+}
+
+struct EDScrollViewOffsetKey: PreferenceKey {
+    static var defaultValue = CGFloat.zero
+    static func reduce(value: inout Value, nextValue: () -> Value) {
+        // value += nextValue()
+    }
+}
+
+struct EDScrollViewOffsetTracker: View {
+    var body: some View {
+        GeometryReader { geo in
+            Color.clear
+                .preference(
+                    key: EDScrollViewOffsetKey.self,
+                    value: geo.frame(in: .named("scrollView")).origin.y
+                )
+        }
+        .frame(height: 0)
     }
 }
 
