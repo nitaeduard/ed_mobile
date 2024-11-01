@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		232072822CB1D0330043D05C /* coronaGlow.metal in Sources */ = {isa = PBXBuildFile; fileRef = 232072812CB1D02E0043D05C /* coronaGlow.metal */; };
 		232072842CB1D1A00043D05C /* vertexShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 232072832CB1D1980043D05C /* vertexShader.metal */; };
+		234957382CD3CA0500ACAE2B /* QuestsListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234957372CD3CA0200ACAE2B /* QuestsListScreen.swift */; };
+		2349573A2CD3CA5700ACAE2B /* GalnetScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234957392CD3CA5100ACAE2B /* GalnetScreen.swift */; };
+		2349573C2CD3CA9000ACAE2B /* EngineersScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2349573B2CD3CA8C00ACAE2B /* EngineersScreen.swift */; };
+		2349573E2CD3CAB200ACAE2B /* RouteScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2349573D2CD3CAAE00ACAE2B /* RouteScreen.swift */; };
+		234957402CD3CAC300ACAE2B /* ShipsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2349573F2CD3CAC100ACAE2B /* ShipsScreen.swift */; };
 		23BFA6252CB1C120008C5DEC /* StarSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BFA6242CB1C120008C5DEC /* StarSceneView.swift */; };
 		23CE4E0D2BAA206D007636C3 /* EDMobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CE4E0C2BAA206D007636C3 /* EDMobileApp.swift */; };
 		23CE4E0F2BAA206D007636C3 /* EDContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CE4E0E2BAA206D007636C3 /* EDContentView.swift */; };
@@ -21,7 +26,7 @@
 		23DF39762BAA3DBC00E8DECF /* EDCommanderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DF39752BAA3DBC00E8DECF /* EDCommanderView.swift */; };
 		23DF39782BAA3DD900E8DECF /* EDCommanderRankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DF39772BAA3DD900E8DECF /* EDCommanderRankView.swift */; };
 		23EF18382BCDB84E003AEFBD /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 23EF18372BCDB84E003AEFBD /* Localizable.xcstrings */; };
-		23F150212CB30476007AA7A4 /* EDMainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F150202CB3046E007AA7A4 /* EDMainScreen.swift */; };
+		23F150212CB30476007AA7A4 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F150202CB3046E007AA7A4 /* MainScreen.swift */; };
 		23F99BC62CB2BBAC007198EF /* PlanetSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F99BC52CB2BBA7007198EF /* PlanetSceneView.swift */; };
 		23F99BC82CB2BF70007198EF /* planetShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 23F99BC72CB2BF69007198EF /* planetShader.metal */; };
 		23FBA7DE2CB0A08A00824963 /* EDQuestsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FBA7DD2CB0A08800824963 /* EDQuestsView.swift */; };
@@ -30,6 +35,11 @@
 /* Begin PBXFileReference section */
 		232072812CB1D02E0043D05C /* coronaGlow.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = coronaGlow.metal; sourceTree = "<group>"; };
 		232072832CB1D1980043D05C /* vertexShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = vertexShader.metal; sourceTree = "<group>"; };
+		234957372CD3CA0200ACAE2B /* QuestsListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestsListScreen.swift; sourceTree = "<group>"; };
+		234957392CD3CA5100ACAE2B /* GalnetScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalnetScreen.swift; sourceTree = "<group>"; };
+		2349573B2CD3CA8C00ACAE2B /* EngineersScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineersScreen.swift; sourceTree = "<group>"; };
+		2349573D2CD3CAAE00ACAE2B /* RouteScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteScreen.swift; sourceTree = "<group>"; };
+		2349573F2CD3CAC100ACAE2B /* ShipsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipsScreen.swift; sourceTree = "<group>"; };
 		23BFA6242CB1C120008C5DEC /* StarSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarSceneView.swift; sourceTree = "<group>"; };
 		23CE4E092BAA206D007636C3 /* EDMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EDMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23CE4E0C2BAA206D007636C3 /* EDMobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDMobileApp.swift; sourceTree = "<group>"; };
@@ -44,7 +54,7 @@
 		23DF39752BAA3DBC00E8DECF /* EDCommanderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDCommanderView.swift; sourceTree = "<group>"; };
 		23DF39772BAA3DD900E8DECF /* EDCommanderRankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDCommanderRankView.swift; sourceTree = "<group>"; };
 		23EF18372BCDB84E003AEFBD /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
-		23F150202CB3046E007AA7A4 /* EDMainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDMainScreen.swift; sourceTree = "<group>"; };
+		23F150202CB3046E007AA7A4 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		23F99BC52CB2BBA7007198EF /* PlanetSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetSceneView.swift; sourceTree = "<group>"; };
 		23F99BC72CB2BF69007198EF /* planetShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = planetShader.metal; sourceTree = "<group>"; };
 		23FBA7DD2CB0A08800824963 /* EDQuestsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDQuestsView.swift; sourceTree = "<group>"; };
@@ -61,6 +71,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		234957352CD3C88800ACAE2B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				2349573F2CD3CAC100ACAE2B /* ShipsScreen.swift */,
+				2349573D2CD3CAAE00ACAE2B /* RouteScreen.swift */,
+				2349573B2CD3CA8C00ACAE2B /* EngineersScreen.swift */,
+				234957392CD3CA5100ACAE2B /* GalnetScreen.swift */,
+				234957372CD3CA0200ACAE2B /* QuestsListScreen.swift */,
+				23F150202CB3046E007AA7A4 /* MainScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		234957362CD3C88E00ACAE2B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				23DF39752BAA3DBC00E8DECF /* EDCommanderView.swift */,
+				23DF39772BAA3DD900E8DECF /* EDCommanderRankView.swift */,
+				23D855EC2C38761D00E2D914 /* EDJournalView.swift */,
+				23F99BC52CB2BBA7007198EF /* PlanetSceneView.swift */,
+				23BFA6242CB1C120008C5DEC /* StarSceneView.swift */,
+				23FBA7DD2CB0A08800824963 /* EDQuestsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		23CE4E002BAA206D007636C3 = {
 			isa = PBXGroup;
 			children = (
@@ -81,16 +117,11 @@
 		23CE4E0B2BAA206D007636C3 /* EDMobile */ = {
 			isa = PBXGroup;
 			children = (
-				23F150202CB3046E007AA7A4 /* EDMainScreen.swift */,
-				23F99BC52CB2BBA7007198EF /* PlanetSceneView.swift */,
-				23BFA6242CB1C120008C5DEC /* StarSceneView.swift */,
-				23FBA7DD2CB0A08800824963 /* EDQuestsView.swift */,
+				234957352CD3C88800ACAE2B /* Screens */,
+				234957362CD3C88E00ACAE2B /* Views */,
 				23CE4E1D2BAA20A9007636C3 /* Data */,
 				23CE4E0C2BAA206D007636C3 /* EDMobileApp.swift */,
 				23CE4E0E2BAA206D007636C3 /* EDContentView.swift */,
-				23DF39752BAA3DBC00E8DECF /* EDCommanderView.swift */,
-				23DF39772BAA3DD900E8DECF /* EDCommanderRankView.swift */,
-				23D855EC2C38761D00E2D914 /* EDJournalView.swift */,
 			);
 			path = EDMobile;
 			sourceTree = "<group>";
@@ -198,21 +229,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				234957402CD3CAC300ACAE2B /* ShipsScreen.swift in Sources */,
 				23DF39782BAA3DD900E8DECF /* EDCommanderRankView.swift in Sources */,
-				23F150212CB30476007AA7A4 /* EDMainScreen.swift in Sources */,
+				23F150212CB30476007AA7A4 /* MainScreen.swift in Sources */,
 				232072822CB1D0330043D05C /* coronaGlow.metal in Sources */,
 				232072842CB1D1A00043D05C /* vertexShader.metal in Sources */,
 				23CE4E0F2BAA206D007636C3 /* EDContentView.swift in Sources */,
 				23F99BC82CB2BF70007198EF /* planetShader.metal in Sources */,
+				234957382CD3CA0500ACAE2B /* QuestsListScreen.swift in Sources */,
+				2349573A2CD3CA5700ACAE2B /* GalnetScreen.swift in Sources */,
 				23CE4E112BAA206D007636C3 /* EDJournalFile.swift in Sources */,
 				23CE4E212BAA20BC007636C3 /* ProfileDTO.swift in Sources */,
 				23CE4E0D2BAA206D007636C3 /* EDMobileApp.swift in Sources */,
 				23D855ED2C38761D00E2D914 /* EDJournalView.swift in Sources */,
+				2349573C2CD3CA9000ACAE2B /* EngineersScreen.swift in Sources */,
 				23DF39762BAA3DBC00E8DECF /* EDCommanderView.swift in Sources */,
 				23FBA7DE2CB0A08A00824963 /* EDQuestsView.swift in Sources */,
 				23CE4E202BAA20BC007636C3 /* EDFrontierServer.swift in Sources */,
 				23BFA6252CB1C120008C5DEC /* StarSceneView.swift in Sources */,
 				23F99BC62CB2BBAC007198EF /* PlanetSceneView.swift in Sources */,
+				2349573E2CD3CAB200ACAE2B /* RouteScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -26,33 +26,34 @@ struct EDContentView: View {
         NavigationSplitView {
             List {
                 // NavigationLink { EDGalnetView() } label: { Text("Gallnet") }
-                NavigationLink { EDCommanderView().environmentObject(server) } label: { Text("Commander") }
+                NavigationLink { EDCommanderView() } label: { Text("Commander") }
                 NavigationLink { EDJournalView() } label: { Text("Journal") }
                 NavigationLink { EDQuestsView() } label: { Text("Quests") }
             }
+            .environmentObject(server)
             #if os(macOS)
-            .navigationSplitViewColumnWidth(min: 180, ideal: 200)
+                .navigationSplitViewColumnWidth(min: 180, ideal: 200)
             #endif
-            .toolbar {
-                #if os(iOS)
-                    if loggedIn.isEmpty {
-                        Button("Log In") {
-                            Task {
-                                do {
-                                    try await server.showLogin(using: webAuthenticationSession)
-                                    loggedIn = "CMDR \(server.profile?.commander.name ?? "...")"
-                                } catch {
-                                    loggedIn = "Error"
-                                    // Respond to any authorization errors.
-                                    print(error.localizedDescription)
+                .toolbar {
+                    #if os(iOS)
+                        if loggedIn.isEmpty {
+                            Button("Log In") {
+                                Task {
+                                    do {
+                                        try await server.showLogin(using: webAuthenticationSession)
+                                        loggedIn = "CMDR \(server.profile?.commander.name ?? "...")"
+                                    } catch {
+                                        loggedIn = "Error"
+                                        // Respond to any authorization errors.
+                                        print(error.localizedDescription)
+                                    }
                                 }
                             }
+                        } else {
+                            Text("O7, \(loggedIn)!")
                         }
-                    } else {
-                        Text("O7, \(loggedIn)!")
-                    }
-                #endif
-            }
+                    #endif
+                }
         } detail: {
             Text("Select an item")
         }

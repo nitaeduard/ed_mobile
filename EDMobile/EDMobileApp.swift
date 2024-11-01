@@ -27,7 +27,11 @@ class EDLocalData {
 struct EDMobileApp: App {
     var body: some Scene {
         WindowGroup {
-            EDContentView()
+//            #if os(macOS)
+//                EDContentView()
+//            #else
+                EDMainScreen()
+//            #endif
         }
         .modelContainer(EDLocalData.shared)
     }

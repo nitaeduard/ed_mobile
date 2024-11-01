@@ -10,10 +10,18 @@ import QuartzCore
 import SceneKit
 import SwiftUI
 
-struct EDPlanetSceneView: UIViewRepresentable {
+struct EDPlanetSceneView: EDViewRepresentable {
     func makeUIView(context: Context) -> SCNView {
+        createView()
+    }
+
+    func makeNSView(context: Context) -> SCNView {
+        createView()
+    }
+
+    private func createView() -> SCNView {
         let scnView = SCNView()
-        scnView.backgroundColor = UIColor.black
+        scnView.backgroundColor = EDColor.black
 
         // Create Scene
         let scene = SCNScene()
@@ -45,11 +53,13 @@ struct EDPlanetSceneView: UIViewRepresentable {
 
     func updateUIView(_ uiView: SCNView, context: Context) { }
 
+    func updateNSView(_ nsView: SCNView, context: Context) {}
+
     // Function to create the planet
     func createPlanet() -> SCNNode {
         let planetGeometry = SCNSphere(radius: 1.1)
         let material = SCNMaterial()
-        
+
         let shaderProgram = SCNProgram()
         shaderProgram.vertexFunctionName = "planetVertexShader"
         shaderProgram.fragmentFunctionName = "planetFragmentShader"
@@ -114,7 +124,7 @@ struct EDPlanetSceneView: UIViewRepresentable {
     func createAtmosphere() -> SCNNode {
         let atmosphereGeometry = SCNSphere(radius: 1.2)
         let atmosphereMaterial = SCNMaterial()
-        atmosphereMaterial.diffuse.contents = UIColor(red: 0.2, green: 0.5, blue: 1.0, alpha: 0.01)
+        atmosphereMaterial.diffuse.contents = EDColor(red: 0.2, green: 0.5, blue: 1.0, alpha: 0.01)
         atmosphereMaterial.blendMode = .add
         atmosphereGeometry.firstMaterial = atmosphereMaterial
         return SCNNode(geometry: atmosphereGeometry)
@@ -127,7 +137,7 @@ struct EDPlanetSceneView: UIViewRepresentable {
         let stars = SCNParticleSystem()
         stars.birthRate = 500
         stars.particleSize = 0.01
-        stars.particleColor = UIColor.white
+        stars.particleColor = EDColor.white
         stars.particleLifeSpan = 10.0
         stars.blendMode = .additive
         starNode.addParticleSystem(stars)
