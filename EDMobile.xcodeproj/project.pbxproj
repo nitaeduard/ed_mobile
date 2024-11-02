@@ -25,6 +25,8 @@
 		23D855ED2C38761D00E2D914 /* EDJournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D855EC2C38761D00E2D914 /* EDJournalView.swift */; };
 		23DF39762BAA3DBC00E8DECF /* EDCommanderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DF39752BAA3DBC00E8DECF /* EDCommanderView.swift */; };
 		23DF39782BAA3DD900E8DECF /* EDCommanderRankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DF39772BAA3DD900E8DECF /* EDCommanderRankView.swift */; };
+		23EE09422CD678570057A0ED /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 23EE09412CD678570057A0ED /* GoogleMobileAds */; };
+		23EE094A2CD67BFE0057A0ED /* ADMobManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EE09482CD67BFE0057A0ED /* ADMobManager.swift */; };
 		23EF18382BCDB84E003AEFBD /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 23EF18372BCDB84E003AEFBD /* Localizable.xcstrings */; };
 		23F150212CB30476007AA7A4 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F150202CB3046E007AA7A4 /* MainScreen.swift */; };
 		23F99BC62CB2BBAC007198EF /* PlanetSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F99BC52CB2BBA7007198EF /* PlanetSceneView.swift */; };
@@ -41,7 +43,7 @@
 		2349573D2CD3CAAE00ACAE2B /* RouteScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteScreen.swift; sourceTree = "<group>"; };
 		2349573F2CD3CAC100ACAE2B /* ShipsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipsScreen.swift; sourceTree = "<group>"; };
 		23BFA6242CB1C120008C5DEC /* StarSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarSceneView.swift; sourceTree = "<group>"; };
-		23CE4E092BAA206D007636C3 /* EDMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EDMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23CE4E092BAA206D007636C3 /* ED:Quest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ED:Quest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23CE4E0C2BAA206D007636C3 /* EDMobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDMobileApp.swift; sourceTree = "<group>"; };
 		23CE4E0E2BAA206D007636C3 /* EDContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDContentView.swift; sourceTree = "<group>"; };
 		23CE4E102BAA206D007636C3 /* EDJournalFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDJournalFile.swift; sourceTree = "<group>"; };
@@ -53,6 +55,11 @@
 		23D855EC2C38761D00E2D914 /* EDJournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDJournalView.swift; sourceTree = "<group>"; };
 		23DF39752BAA3DBC00E8DECF /* EDCommanderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDCommanderView.swift; sourceTree = "<group>"; };
 		23DF39772BAA3DD900E8DECF /* EDCommanderRankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDCommanderRankView.swift; sourceTree = "<group>"; };
+		23EE093C2CD5426C0057A0ED /* Electrolize-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Electrolize-Regular.ttf"; sourceTree = "<group>"; };
+		23EE093D2CD5426C0057A0ED /* OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		23EE09472CD67A070057A0ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23EE09482CD67BFE0057A0ED /* ADMobManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADMobManager.swift; sourceTree = "<group>"; };
+		23EE094B2CD67C0C0057A0ED /* Info_Debug.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info_Debug.plist; sourceTree = "<group>"; };
 		23EF18372BCDB84E003AEFBD /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		23F150202CB3046E007AA7A4 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		23F99BC52CB2BBA7007198EF /* PlanetSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetSceneView.swift; sourceTree = "<group>"; };
@@ -65,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23EE09422CD678570057A0ED /* GoogleMobileAds in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,7 +117,7 @@
 		23CE4E0A2BAA206D007636C3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				23CE4E092BAA206D007636C3 /* EDMobile.app */,
+				23CE4E092BAA206D007636C3 /* ED:Quest.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,6 +128,7 @@
 				234957352CD3C88800ACAE2B /* Screens */,
 				234957362CD3C88E00ACAE2B /* Views */,
 				23CE4E1D2BAA20A9007636C3 /* Data */,
+				23EE09492CD67BFE0057A0ED /* Managers */,
 				23CE4E0C2BAA206D007636C3 /* EDMobileApp.swift */,
 				23CE4E0E2BAA206D007636C3 /* EDContentView.swift */,
 			);
@@ -147,7 +156,10 @@
 		23CE4E222BAA20C4007636C3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				23EE093B2CD542630057A0ED /* Fonts */,
 				23F99BC72CB2BF69007198EF /* planetShader.metal */,
+				23EE09472CD67A070057A0ED /* Info.plist */,
+				23EE094B2CD67C0C0057A0ED /* Info_Debug.plist */,
 				23CE4E122BAA206E007636C3 /* Assets.xcassets */,
 				232072812CB1D02E0043D05C /* coronaGlow.metal */,
 				232072832CB1D1980043D05C /* vertexShader.metal */,
@@ -156,6 +168,23 @@
 				23EF18372BCDB84E003AEFBD /* Localizable.xcstrings */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		23EE093B2CD542630057A0ED /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				23EE093C2CD5426C0057A0ED /* Electrolize-Regular.ttf */,
+				23EE093D2CD5426C0057A0ED /* OFL.txt */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		23EE09492CD67BFE0057A0ED /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				23EE09482CD67BFE0057A0ED /* ADMobManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,7 +204,7 @@
 			);
 			name = EDMobile;
 			productName = EDMobile;
-			productReference = 23CE4E092BAA206D007636C3 /* EDMobile.app */;
+			productReference = 23CE4E092BAA206D007636C3 /* ED:Quest.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -202,6 +231,9 @@
 				Base,
 			);
 			mainGroup = 23CE4E002BAA206D007636C3;
+			packageReferences = (
+				23EE09402CD678570057A0ED /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+			);
 			productRefGroup = 23CE4E0A2BAA206D007636C3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -249,6 +281,7 @@
 				23BFA6252CB1C120008C5DEC /* StarSceneView.swift in Sources */,
 				23F99BC62CB2BBAC007198EF /* PlanetSceneView.swift in Sources */,
 				2349573E2CD3CAB200ACAE2B /* RouteScreen.swift in Sources */,
+				23EE094A2CD67BFE0057A0ED /* ADMobManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,6 +418,7 @@
 				DEVELOPMENT_TEAM = 9TRF5X4JVS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Resources/Info_Debug.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -402,7 +436,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nedrogue.edmobile;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "ED:Quest";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -426,6 +460,7 @@
 				DEVELOPMENT_TEAM = 9TRF5X4JVS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Resources/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -443,7 +478,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nedrogue.edmobile;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "ED:Quest";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -475,6 +510,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		23EE09402CD678570057A0ED /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		23EE09412CD678570057A0ED /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 23EE09402CD678570057A0ED /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 23CE4E012BAA206D007636C3 /* Project object */;
 }

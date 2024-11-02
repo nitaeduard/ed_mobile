@@ -31,7 +31,6 @@ struct EDMainScreen: View {
                 Tab("Q", systemImage: "bell") {
                     NavigationStack {
                         EDQuestsListScreen(detailsVisible: $detailsVisible)
-                            .navigationTitle("My Note")
                             .toolbar {
                                 if !loggedIn.isEmpty {
                                     Text("O7, \(loggedIn)!")

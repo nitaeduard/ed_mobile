@@ -4,6 +4,7 @@
 //
 //  Created by Eduard Radu Nita on 31/10/2024.
 //
+import GoogleMobileAds
 import SwiftUI
 
 struct EDQuestsListScreen: View {
@@ -26,19 +27,26 @@ struct EDQuestsListScreen: View {
     }
 
     var body: some View {
-        VStack {
-            ScrollView {
-                ForEach(visibleQuests) { quest in
-                    questRowView(quest)
-                        .onTapGesture {
-                            withAnimation {
-                                visibleQuest = quest
-                                detailsVisible = true
+        GeometryReader { proxy in
+
+            VStack(spacing: 0) {
+                ScrollView(.vertical) {
+                    ForEach(visibleQuests) { quest in
+                        questRowView(quest)
+                            .onTapGesture {
+                                withAnimation {
+                                    visibleQuest = quest
+                                    detailsVisible = true
+                                }
                             }
-                        }
+                    }
                 }
+
+                let adSize = GADCurrentOrientationAnchoredAdaptiveBannerAdSizeWithWidth(proxy.size.width)
+                EDAdBannerInternalView(adSize)
+                    .frame(height: adSize.size.height)
+                    .background(Material.thinMaterial)
             }
-            Spacer()
         }
         .background {
             if let visibleQuest {
