@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		232072822CB1D0330043D05C /* coronaGlow.metal in Sources */ = {isa = PBXBuildFile; fileRef = 232072812CB1D02E0043D05C /* coronaGlow.metal */; };
-		232072842CB1D1A00043D05C /* vertexShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 232072832CB1D1980043D05C /* vertexShader.metal */; };
+		232072842CB1D1A00043D05C /* simpleVertexShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 232072832CB1D1980043D05C /* simpleVertexShader.metal */; };
 		234957382CD3CA0500ACAE2B /* QuestsListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234957372CD3CA0200ACAE2B /* QuestsListScreen.swift */; };
 		2349573A2CD3CA5700ACAE2B /* GalnetScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234957392CD3CA5100ACAE2B /* GalnetScreen.swift */; };
 		2349573C2CD3CA9000ACAE2B /* EngineersScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2349573B2CD3CA8C00ACAE2B /* EngineersScreen.swift */; };
@@ -27,6 +27,7 @@
 		23DF39782BAA3DD900E8DECF /* EDCommanderRankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DF39772BAA3DD900E8DECF /* EDCommanderRankView.swift */; };
 		23EE09422CD678570057A0ED /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 23EE09412CD678570057A0ED /* GoogleMobileAds */; };
 		23EE094A2CD67BFE0057A0ED /* ADMobManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EE09482CD67BFE0057A0ED /* ADMobManager.swift */; };
+		23EE094D2CD6C7DF0057A0ED /* EDMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EE094C2CD6C7D40057A0ED /* EDMenuView.swift */; };
 		23EF18382BCDB84E003AEFBD /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 23EF18372BCDB84E003AEFBD /* Localizable.xcstrings */; };
 		23F150212CB30476007AA7A4 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F150202CB3046E007AA7A4 /* MainScreen.swift */; };
 		23F99BC62CB2BBAC007198EF /* PlanetSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F99BC52CB2BBA7007198EF /* PlanetSceneView.swift */; };
@@ -36,7 +37,7 @@
 
 /* Begin PBXFileReference section */
 		232072812CB1D02E0043D05C /* coronaGlow.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = coronaGlow.metal; sourceTree = "<group>"; };
-		232072832CB1D1980043D05C /* vertexShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = vertexShader.metal; sourceTree = "<group>"; };
+		232072832CB1D1980043D05C /* simpleVertexShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = simpleVertexShader.metal; sourceTree = "<group>"; };
 		234957372CD3CA0200ACAE2B /* QuestsListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestsListScreen.swift; sourceTree = "<group>"; };
 		234957392CD3CA5100ACAE2B /* GalnetScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalnetScreen.swift; sourceTree = "<group>"; };
 		2349573B2CD3CA8C00ACAE2B /* EngineersScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineersScreen.swift; sourceTree = "<group>"; };
@@ -60,6 +61,7 @@
 		23EE09472CD67A070057A0ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23EE09482CD67BFE0057A0ED /* ADMobManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADMobManager.swift; sourceTree = "<group>"; };
 		23EE094B2CD67C0C0057A0ED /* Info_Debug.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info_Debug.plist; sourceTree = "<group>"; };
+		23EE094C2CD6C7D40057A0ED /* EDMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDMenuView.swift; sourceTree = "<group>"; };
 		23EF18372BCDB84E003AEFBD /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		23F150202CB3046E007AA7A4 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		23F99BC52CB2BBA7007198EF /* PlanetSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetSceneView.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 		234957362CD3C88E00ACAE2B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				23EE094C2CD6C7D40057A0ED /* EDMenuView.swift */,
 				23DF39752BAA3DBC00E8DECF /* EDCommanderView.swift */,
 				23DF39772BAA3DD900E8DECF /* EDCommanderRankView.swift */,
 				23D855EC2C38761D00E2D914 /* EDJournalView.swift */,
@@ -162,7 +165,7 @@
 				23EE094B2CD67C0C0057A0ED /* Info_Debug.plist */,
 				23CE4E122BAA206E007636C3 /* Assets.xcassets */,
 				232072812CB1D02E0043D05C /* coronaGlow.metal */,
-				232072832CB1D1980043D05C /* vertexShader.metal */,
+				232072832CB1D1980043D05C /* simpleVertexShader.metal */,
 				23CE4E142BAA206E007636C3 /* EDMobile.entitlements */,
 				23CE4E152BAA206E007636C3 /* Preview Content */,
 				23EF18372BCDB84E003AEFBD /* Localizable.xcstrings */,
@@ -215,7 +218,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1530;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 1610;
 				TargetAttributes = {
 					23CE4E082BAA206D007636C3 = {
 						CreatedOnToolsVersion = 15.3;
@@ -265,7 +268,7 @@
 				23DF39782BAA3DD900E8DECF /* EDCommanderRankView.swift in Sources */,
 				23F150212CB30476007AA7A4 /* MainScreen.swift in Sources */,
 				232072822CB1D0330043D05C /* coronaGlow.metal in Sources */,
-				232072842CB1D1A00043D05C /* vertexShader.metal in Sources */,
+				232072842CB1D1A00043D05C /* simpleVertexShader.metal in Sources */,
 				23CE4E0F2BAA206D007636C3 /* EDContentView.swift in Sources */,
 				23F99BC82CB2BF70007198EF /* planetShader.metal in Sources */,
 				234957382CD3CA0500ACAE2B /* QuestsListScreen.swift in Sources */,
@@ -277,6 +280,7 @@
 				2349573C2CD3CA9000ACAE2B /* EngineersScreen.swift in Sources */,
 				23DF39762BAA3DBC00E8DECF /* EDCommanderView.swift in Sources */,
 				23FBA7DE2CB0A08A00824963 /* EDQuestsView.swift in Sources */,
+				23EE094D2CD6C7DF0057A0ED /* EDMenuView.swift in Sources */,
 				23CE4E202BAA20BC007636C3 /* EDFrontierServer.swift in Sources */,
 				23BFA6252CB1C120008C5DEC /* StarSceneView.swift in Sources */,
 				23F99BC62CB2BBAC007198EF /* PlanetSceneView.swift in Sources */,
@@ -416,6 +420,7 @@
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 9TRF5X4JVS;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Resources/Info_Debug.plist;
@@ -458,6 +463,7 @@
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 9TRF5X4JVS;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Resources/Info.plist;

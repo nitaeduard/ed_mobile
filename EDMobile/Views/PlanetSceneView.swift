@@ -32,8 +32,9 @@ struct EDPlanetSceneView: EDViewRepresentable {
         scene.rootNode.addChildNode(planetNode)
 
         // Add Stars background
-//        let starsNode = createStars()
-//        scene.rootNode.addChildNode(starsNode)
+        let starsNode = createStaticStars()
+        starsNode.position = .init(0, 0, -3)
+        scene.rootNode.addChildNode(starsNode)
 
         // Setup Camera
         let cameraNode = SCNNode()
@@ -130,16 +131,37 @@ struct EDPlanetSceneView: EDViewRepresentable {
         return SCNNode(geometry: atmosphereGeometry)
     }
 
-    // Function to create stars
     func createStars() -> SCNNode {
         let starNode = SCNNode()
 
         let stars = SCNParticleSystem()
-        stars.birthRate = 500
-        stars.particleSize = 0.01
-        stars.particleColor = EDColor.white
-        stars.particleLifeSpan = 10.0
+        stars.birthRate = 5
+        stars.birthLocation = .volume
+        stars.birthRateVariation = 100
+        stars.emitterShape = SCNSphere(radius: 4)
+        stars.particleSize = 0.005
         stars.blendMode = .additive
+        stars.particleColor = EDColor.blue
+        stars.particleLifeSpan = 20.0
+        stars.acceleration = .init(0, 0, 1)
+        starNode.addParticleSystem(stars)
+
+        return starNode
+    }
+
+    func createStaticStars() -> SCNNode {
+        let starNode = SCNNode()
+
+        let stars = SCNParticleSystem()
+        stars.birthRate = 5
+        stars.birthLocation = .surface
+        stars.birthRateVariation = 100
+        stars.emitterShape = SCNBox(width: 6, height: 15, length: 2, chamferRadius: 0)
+        stars.particleSize = 0.01
+        stars.blendMode = .additive
+        stars.particleColor = EDColor.blue
+        stars.particleLifeSpan = 5.0
+//        stars.acceleration = .init(0, 0, 1)
         starNode.addParticleSystem(stars)
 
         return starNode

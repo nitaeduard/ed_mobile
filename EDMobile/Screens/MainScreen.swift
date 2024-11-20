@@ -28,7 +28,7 @@ struct EDMainScreen: View {
     var body: some View {
         if #available(iOS 18, macOS 15, *) {
             TabView {
-                Tab("Q", systemImage: "bell") {
+                Tab("Quests", image: "missions") {
                     NavigationStack {
                         EDQuestsListScreen(detailsVisible: $detailsVisible)
                             .toolbar {
@@ -49,6 +49,9 @@ struct EDMainScreen: View {
                                         }
                                     }
                                 }
+                            }
+                            .background {
+                                EDNebulaeBackground()
                             }
                     }
                 }
@@ -172,7 +175,7 @@ extension EDMainScreen {
         HStack {
             Spacer()
             bottomBarButton(.quests, image: .universalCartographics)
-            bottomBarButton(.galnet, image: .galNet)
+            bottomBarButton(.galnet, image: .galnet)
             bottomBarButton(.engineers, image: .engineer)
             bottomBarButton(.route, image: .route)
             bottomBarButton(.ship, image: .ship)
@@ -201,7 +204,25 @@ extension EDMainScreen {
     }
 }
 
+struct EDNebulaeBackground: View {
+    @State var startDate = Date()
+
+    var body: some View {
+//        TimelineView(.animation) { _ in
+            Rectangle()
+                .ignoresSafeArea()
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .colorEffect(
+                    ShaderLibrary.simpleVertexShader(
+                        .float(startDate.timeIntervalSinceNow)
+                    )
+                )
+//        }0
+    }
+}
+
 #Preview {
-    EDMainScreen()
+    // EDMainScreen()
+    EDNebulaeBackground()
         .preferredColorScheme(.dark)
 }
